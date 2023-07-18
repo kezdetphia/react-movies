@@ -9,6 +9,8 @@ import ActorListPage from '../ActorListPage/ActorListPage';
 import MovieDetailPage from '../MovieDetailPage/MovieDetailPage'
 import MoviesListPage from '../MoviesListPage/MoviesListPage';
 
+import {movies} from '../../data'
+
 
 
 function App() {
@@ -27,8 +29,9 @@ function App() {
       <>
         <Navbar user={user} />
         <Routes>
-          <Route path='/' element={<MoviesListPage />} />
+          <Route path='/' element={<MoviesListPage movies={movies} />} />
           <Route path='/actors' element={<ActorListPage />} />
+          <Route path='/moviedetails' element={<MovieDetailPage movies={movies} />} />
         </Routes>
         
       </>
