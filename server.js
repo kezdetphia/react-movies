@@ -4,9 +4,10 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');  //logger middleware logs information about incoming http requests and outgoning responses
  
 const app = express();  
-     
+
 require('dotenv').config();
- 
+require('./config/database')
+
 app.use(logger('dev'));  //mounts logger middleware, 
 app.use(express.json());
  // Configure to use port 3001 instead of 3000 during
