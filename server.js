@@ -3,11 +3,12 @@ const path = require('path');            //this is part of node, will allow me t
 const favicon = require('serve-favicon');  
 const logger = require('morgan');  //logger middleware logs information about incoming http requests and outgoning responses
  
-const app = express();       
+const app = express();  
+     
+require('dotenv').config();
  
 app.use(logger('dev'));  //mounts logger middleware, 
 app.use(express.json());
-
  // Configure to use port 3001 instead of 3000 during
  // development to avoid collision with React's dev server
  const port = process.env.PORT || 3001;
