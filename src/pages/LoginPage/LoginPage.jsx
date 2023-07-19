@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './LoginPage.css'
 
 //here getting the addnewuser func from app 
 const LoginPage = ({addNewUser}) => {
@@ -15,38 +16,26 @@ const LoginPage = ({addNewUser}) => {
     console.log(newUser) 
   }
 
-
-  return (
-    <div className="auth-page">
-    <h1>LoginPage</h1>
-    {/* onsubmit the handlelogin function */}
-    <form onSubmit={handleLogin}>
-      <label>
-        Username:
-        <input
-          // this funct updates the newUser state based on the events value
-          //working code
-          onChange={(e)=> setnewUser(e.target.value)}
-          //question,
-          //why do we need to update local state in this case newUser and
-          //why does the addNewUser function that we received as props
-          // not update directly the App's user state? 
-          //is it just how react is? A function from another component
-          // cant affect another component's state? 
-          //It has to go through a state update?
-          //so this is the code below that made me ask this question
-          // onchange={((e)=>(addNewUser(e.target.value)))}
-          //or is the e.target.value not a string? cause then it would
-          //makes sense
-          type="text"
-          placeholder="Enter your username"
-      
+return (
+  <div className="login-container">
+    <div className="login-box">
+      <h2 className="login-title">Welcome Back!</h2>
+      <form onSubmit={handleLogin}>
+        <div className="form-group">
+          
+          <input 
+            onChange={(e)=> setnewUser(e.target.value)}
+            type="text"
+            placeholder="Enter your username"
           />
-      </label>
-      <button type="submit">Login</button>
-    </form>
+        </div>
+        <button type="submit" className="login-btn"> <b>Log In</b> </button>
+      </form>
+
+    </div>
   </div>
-  );
+);
 };
+
 
 export default LoginPage;

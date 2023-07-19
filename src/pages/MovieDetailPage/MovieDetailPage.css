@@ -1,0 +1,31 @@
+.movie-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.movie-detail-image {
+  flex: 1;
+  text-align: center;
+}
+
+.movie-detail-image img {
+  max-width: 100%;
+  max-height: 100%
+}
+
+.movie-detail-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.movie-detail-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-detail-details p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
