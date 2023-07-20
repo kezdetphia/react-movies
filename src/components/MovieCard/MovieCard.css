@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  background-color: black;
+  background-color:black;
 }
 
 .card {
@@ -16,7 +16,7 @@
   padding: 12px;
   box-sizing: border-box;
   border: 1px solid #ff0303;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
 }
 
 .card-body{

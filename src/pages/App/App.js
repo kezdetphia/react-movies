@@ -30,7 +30,7 @@ function App() {
         <Navbar user={user} />
         <Routes>
           <Route path='/' element={<MoviesListPage movies={movies} />} />
-          <Route path='/actors' element={<ActorListPage />} />
+          <Route path='/actors' element={<ActorListPage movies={movies} />} />
           <Route path='/moviedetails/:title' element={<MovieDetailPage movies={movies} />} />
         </Routes>
         

@@ -1,6 +1,21 @@
-.movies-list-page{
+
+
+
+.movies-list-page {
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to fill the whole screen */
+  background-color: black;
+}
 
+/* Adjust the width of each MovieCard to take up equal space */
+/* If you want to show 4 cards in a row, set the width to 25% */
+/* If you want to show 3 cards in a row, set the width to 33.33% */
+/* If you want to show 2 cards in a row, set the width to 50% */
+.MovieCard {
+  width: 25%; /* Adjust this value based on the number of cards you want in a row */
+  padding: 10px;
+  box-sizing: border-box;
 }

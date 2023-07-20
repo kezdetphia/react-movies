@@ -22,7 +22,9 @@ const MovieDetailPage = ({movies}) => {
       <div className='movie-detail-details'>
         <h1>{movie.title}</h1>
         <p>{movie.releaseDate}</p>
-        <p>cast</p>
+        <p>
+          {movie.cast.join(', ')}
+        </p>
       </div>
     </div>
 

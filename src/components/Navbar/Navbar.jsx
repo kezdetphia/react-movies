@@ -3,24 +3,13 @@ import './Navbar.css'
 import './logo.png'
 
 const Navbar = ({user}) => {
-//   return (
-//     <div className="navbar">
-//       <Link to='/'> Movies</Link>
-//       &nbsp;  |  &nbsp;
-//       <Link to='/actors'>Actors</Link>
-//       &nbsp;  |  &nbsp;
-//      Welcome, <b>{user}</b> 
-//     </div>
-//   );
-// };
-
 
 return (
   <nav className="navbar">
     <div className="container">
       <div className="logo">
         {/* Replace the image source with your Netflix-like logo */}
-        <img src='./logo.png' alt="Logo" />
+        <Link style={{color: 'white', textDecoration: 'none'}} to='/'> Logo</Link>
       </div>
       <div className="nav-links">
         {/* Add additional navigation links here */}
