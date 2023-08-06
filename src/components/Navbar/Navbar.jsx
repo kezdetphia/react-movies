@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import './Navbar.css'
-import './logo.png'
+import logo from './tv.png'
 
 const Navbar = ({user}) => {
 
@@ -9,7 +9,7 @@ return (
     <div className="container">
       <div className="logo">
         {/* Replace the image source with your Netflix-like logo */}
-        <Link style={{color: 'white', textDecoration: 'none'}} to='/'> Logo</Link>
+        <Link style={{color: 'white', textDecoration: 'none'}} to='/' ><img src={logo} alt ='Logo'/> </Link>
       </div>
       <div className="nav-links">
         {/* Add additional navigation links here */}
